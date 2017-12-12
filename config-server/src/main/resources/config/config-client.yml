@@ -9,11 +9,11 @@ spring:
     stream:
       kafka:
         binder:
-          brokers: bingo-dev10-mgp-01.preprod.cloud.local.dub:9092
-          zkNodes: bingo-dev10-mgp-01.preprod.cloud.local.dub:2181
+          brokers: localhost:9092
+          zkNodes: localhost:2181
       bindings:
         sleuth:
-          destination: bingoblitz_rotelle_sleuth
+          destination: sleuth_topic
           binder: kafka
 
 server:
